@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title> 📽️ Movie Collection </title>
+  <link rel="stylesheet" href="movie.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Diphylleia&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1> Popular Movies Collection</h1>
+  </header>
+
+  <div class="search">
+    <label> 영화검색 </label>
+    <input type="search" id="search-input" placeholder=" 제목을 검색해 보세요! ">
+    <button type="submit" id="search-btn">검색</button>
+  </div>
+  <!-- form 태그 안에 버튼을 별도의 함수 호출을 안 해도 type을 submit으로 지정하고
+form태그에 onsubmit='handleSearch(event)'를 걸어주면 동작한다 -->
+
+  <section id="movies-container"></section>
+
+  <script src="script.js"></script>
+<script src="search.js"></script>
+  
+  
+</body>
+
+</html>
