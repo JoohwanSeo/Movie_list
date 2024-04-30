@@ -34,7 +34,9 @@
 
 ## 주요 기능
 
-<img src="https://github.com/JoohwanSeo/project/issues/1#issue-2271059681'">
+<p>
+<img src="![1번](https://github.com/JoohwanSeo/project/assets/104831702/532e531e-d0e5-4f4e-baea-9d8e70fd2835)">
+</p>
 
 
  
