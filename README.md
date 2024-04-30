@@ -42,6 +42,9 @@
 
 ![video2](https://github.com/JoohwanSeo/project/assets/104831702/7cd07ca7-b18c-4e43-b7e3-74c486edcdb3)
 
+* 검색 구현
+
+![video3](https://github.com/JoohwanSeo/project/assets/104831702/514e9402-79ee-422c-9051-18fc3f1dd263)
 
 
  
