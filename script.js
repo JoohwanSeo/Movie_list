@@ -92,4 +92,5 @@ fetch(
 //함수 실행
 renderMovie(response.results)
 
+    
   });
