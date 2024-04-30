@@ -40,6 +40,8 @@
 
 * alert창 띄우기
 
+![video2](https://github.com/JoohwanSeo/project/assets/104831702/7cd07ca7-b18c-4e43-b7e3-74c486edcdb3)
+
 
 
  
