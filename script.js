@@ -92,39 +92,4 @@ fetch(
 //함수 실행
 renderMovie(response.results)
 
-
-
-  
-
-    
-
-    // const searchList = response.results.filter(
-    //   ({title}) => title.toLowerCase().includes(searchKey)// 포함:true or 미포함:false
-    // );
-
-    // searchList.length > 0 
-    // ? response.results(searchList)//참
-    // : alert("검색결과가 없습니다.")//거짓
-    // }
-    
-
-    // 검색 버튼 이벤트
-    // searchBtn.addEventListener("click", searchMovie);
-    // searchInput.addEventListener("keyup", (event) => {
-    //   if (event.key === "Enter") {
-    //     searchMovie();
-    //   }
-    // });
-
-    // // 소문자로 변환 영화 제목 검색
-    // const searchMovie = () => {
-    //   console.log(searchInput.value);
-    //   //  const newlist = response.results.filter()
-    //   const searchRate = searchInput.value.toLowerCase();
-    //   const filterMovie = response.result.filter((search) =>
-    //     search.title.toLowerCase().includes(searchRate)
-        
-    //   );
-    // };
-
   });
