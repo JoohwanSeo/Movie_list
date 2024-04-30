@@ -34,6 +34,7 @@
 
 ## 주요 기능
 
+<img src="https://github.com/JoohwanSeo/project/issues/1#issue-2271059681'">
 
 
  
