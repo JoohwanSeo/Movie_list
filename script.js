@@ -39,8 +39,8 @@ fetch(
 
       // 텍스트 컨텐츠 설정
       titleElement.textContent = title;
-      overViewElement.textContent = `줄거리: ${overview}`;
-      voteAverageElement.textContent = `평점: ${vote_average}`;
+      overViewElement.textContent = `줄거리📖: ${overview}`;
+      voteAverageElement.textContent = `평점📌: ${vote_average}`;
 
       card.setAttribute("id", id);
 
@@ -52,36 +52,79 @@ fetch(
 
       return card;
     };
-
-    response.results.forEach((movie) => {
-      const movieCard = createMovieCard(movie);
-      movieContainer.appendChild(movieCard);
-
-      movieCard.addEventListener("click", () => {
-        const movieId = movieCard.getAttribute("id");
-        alert(`영화 ID는 ${movieId}입니다!`);
+    
+    // 검색 인식 DOM 요소
+         const searchInput = document.getElementById("search-input");
+         const searchBtn = document.getElementById("search-btn");
+    
+    // 카드 생성    
+    function renderMovie(movies) {
+      movieContainer.innerHTML = ""
+      movies.forEach((movie) => {
+        const movieCard = createMovieCard(movie);
+        movieContainer.appendChild(movieCard);
+        
+        // alert창 띄우기
+        movieCard.addEventListener("click", () => {
+          const movieId = movieCard.getAttribute("id");
+          alert(`영화 ID는 ${movieId}입니다!`);
+        });
       });
-
-      //버튼
-      const searchInput = document.getElementById("search-input");
-      const searchBtn = document.getElementById("search-btn");
-
-      const searchMovies = () => {
-        const searchRate = searchInput.value.toLowerCase();
-        const filterMovies = movie.filter(search =>
-          search.title.toLowerCase().incluedes(searchRate)
-        );
-        (filterMovies);
-      };
-
-      searchBtn.addEventListener("click", searchMovies);
+      
+      
+         const searchMovie = function(event) {
+          event.preventDefault()
+           const searchRate = searchInput.value.toLowerCase()
+           const filterMovie = response.results.filter(search => search.title.toLowerCase().includes(searchRate))
+           console.log(filterMovie)
+           renderMovie(filterMovie)
+         }
+         searchBtn.addEventListener('click', searchMovie);
 
 
-      searchInput,
-        addEventListener("keyup", (event) => {
-          if (event.key === "Enter") {
-            searchMovies();
+  
+         searchInput.addEventListener('keyup', event => {
+          if (event.key === 'Enter') {
+            searchMovie();
           }
         });
-    });
+}
+//함수 실행
+renderMovie(response.results)
+
+
+
+  
+
+    
+
+    // const searchList = response.results.filter(
+    //   ({title}) => title.toLowerCase().includes(searchKey)// 포함:true or 미포함:false
+    // );
+
+    // searchList.length > 0 
+    // ? response.results(searchList)//참
+    // : alert("검색결과가 없습니다.")//거짓
+    // }
+    
+
+    // 검색 버튼 이벤트
+    // searchBtn.addEventListener("click", searchMovie);
+    // searchInput.addEventListener("keyup", (event) => {
+    //   if (event.key === "Enter") {
+    //     searchMovie();
+    //   }
+    // });
+
+    // // 소문자로 변환 영화 제목 검색
+    // const searchMovie = () => {
+    //   console.log(searchInput.value);
+    //   //  const newlist = response.results.filter()
+    //   const searchRate = searchInput.value.toLowerCase();
+    //   const filterMovie = response.result.filter((search) =>
+    //     search.title.toLowerCase().includes(searchRate)
+        
+    //   );
+    // };
+
   });
