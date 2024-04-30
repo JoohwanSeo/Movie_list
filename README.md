@@ -38,7 +38,7 @@
 
 ![1번](https://github.com/JoohwanSeo/project/assets/104831702/532e531e-d0e5-4f4e-baea-9d8e70fd2835)"
 
-* alert창 띄우기
+* 영화 ID alert창 띄우기
 
 ![video2](https://github.com/JoohwanSeo/project/assets/104831702/7cd07ca7-b18c-4e43-b7e3-74c486edcdb3)
 
