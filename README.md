@@ -34,9 +34,12 @@
 
 ## 주요 기능
 
-<p>
-<img src="![1번](https://github.com/JoohwanSeo/project/assets/104831702/532e531e-d0e5-4f4e-baea-9d8e70fd2835)">
-</p>
+* 카드 요소 생성
+
+![1번](https://github.com/JoohwanSeo/project/assets/104831702/532e531e-d0e5-4f4e-baea-9d8e70fd2835)"
+
+* alert창 띄우기
+
 
 
  
