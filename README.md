@@ -32,6 +32,8 @@
 
 ---
 
+#### DEMO site: https://joohwanseo.github.io/Movie_list/>
+
 ## 주요 기능
 
 * 카드 요소 생성
