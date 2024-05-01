@@ -32,7 +32,7 @@
 
 ---
 
-[#### DEMO site] (https://joohwanseo.github.io/Movie_list/)
+#### [DEMO site] (https://joohwanseo.github.io/Movie_list/)
 
 ## 주요 기능
 
