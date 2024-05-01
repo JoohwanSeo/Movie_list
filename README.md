@@ -7,6 +7,9 @@
 * Title :  Popular Movies Collection 
 
 ---
+#### [DEMO site] (https://joohwanseo.github.io/Movie_list/)
+
+---
 * 필수 요구사항
 
 1) 순수 바닐라 JavaScript 사용하기 ( jQuery 없이 )
@@ -32,9 +35,8 @@
 
 ---
 
-#### [DEMO site] (https://joohwanseo.github.io/Movie_list/)
-
 ## 주요 기능
+
 
 * 카드 요소 생성
 
